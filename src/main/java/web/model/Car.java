@@ -1,20 +1,9 @@
-package hiber.model;
+package web.model;
 
-import javax.persistence.*;
-
-@Entity
-@Table(name="cars")
 public class Car {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
-    @Column(name = "model")
     private String model;
-    @Column(name = "marka")
     private String marka;
-    @Column(name = "series")
     private int series;
 
     public Car(String model, String marka, int series) {
